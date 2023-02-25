@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>EventBuddy</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Images/Logo.png"  class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                  
+                </ul>
+            </nav>
+           
+        </div>
+        
+        <div class="row">
+            <div class="col">
+               <h1>EventBuddy</h1>
+               <br>
+               <p>Register your own events or book among many more!</p>
+               <a href="/login.html"><button type="submit" class="login-btn">Login Now!</button></a>
+               
+        </div>
+
+        <!-- ADDED SLIDER HERE  -->
+
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="Images/Slide-1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Images/Slide-2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Images/Slide-3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Images/Slide-4.png" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div> 
+    
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+            <!-- <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Images/x1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/x2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/x3.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div> -->
+
+                 <!-- <div class="col">
+                    <div class="card card1">
+                        <h5>Event 1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="card card2">
+                        <h5>Event 2</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="card card3">
+                        <h5>Event 3</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="card card4">
+                        <h5>Event 4</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div> 
+                </div>  --> 
+                <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Raphael"
+  agent-id="d779e779-b7ea-4eac-b240-4ad5f8f96e0a"
+  language-code="en"
+></df-messenger>
+                
+            
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Event Manager</title>
+  <link rel="stylesheet" href="ejs-event.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+    
+      <nav>
+          <ul>
+           
+               <h5> Your Event-Manager Profile </h5>
+               <li><a href="/">HOME</a></li>
+              
+          </ul>
+      </nav>
+     
+  </div>
+  </header>
+
+
+
+      <div class="card-flex">
+      
+            <div class="profile-card">
+              <div class="card-header">
+                
+                
+                <div class="name"><%=vI%></div>
+                <div class="desc">Name : <%=foundEventManager%></div> 
+                <br>
+                <div class="desc">Contact No. : <%=contact%></div>
+                <br>
+                <div class="desc">E-mail ID : <%=email%></div>
+                <br>
+                <div class="desc">Location : <%=vA%></div>
+              
+              </div>
+              <div class="card-footer">
+
+                <h4>Published Price :</h4>
+                <br>
+                <h4><%=vP%></h4>
+               
+                </div>
+              </div>
+            </div>
+         
+          
+      
+      </div>
+     
+
+
+
+
+      
+
+
+<%- include("footer") -%>
+
+<!-- 
+
+Loops 
+1) For Loop
+2) For Each Loop
+
+Variable Declaration 
+1) Const
+2) Let
+3) Var 
+
+-->

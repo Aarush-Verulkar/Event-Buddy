@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-registeredEventMaager.css">
+    <title>Event Manager</title>
+  
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Publish Your Criteria</h2>
+    <form action="/registeredManager" method="post">
+
+      <div class="input-box">
+        <input name="vI" type="text" placeholder="Venue Information" required>
+      </div>
+
+      <div class="input-box">
+        <input type="text" placeholder="Venue Address" required>
+      </div>
+
+      <div class="input-box">
+        <input name="image" type="file" id="img" name="img" accept="image/*">
+      </div>
+
+      <div class="input-box">
+        <input name="vP" type="text" placeholder="Venue Pricing" required>
+      </div>
+    
+      <div class="input-box button">
+        <input type="Submit" value="Publish Your Event to the Website">
+      </div>
+    
+    </form>
+  </div>
+
+  <script src="signup.js" ></script>
+</body>
+</html>

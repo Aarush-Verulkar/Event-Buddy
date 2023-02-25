@@ -1,0 +1,49 @@
+<%- include("header") -%>
+
+ 
+
+
+
+
+
+
+   
+<%  foundEventManager.forEach(function(eventUser){ %>
+<div class="card-flex">
+
+      <div class="profile-card">
+        <div class="card-header">
+          <div class="pic">
+          
+          </div>
+          
+         
+          <div class="desc">Event Manager : <%=eventUser.name%></div>
+          <br>
+          <div class="desc">Event Name : <%=eventUser.venuInfo%></div>
+          <br>
+          <div class="desc">Event Address : <%=eventUser.venuAdd%></div>
+          <br>
+          <div class="desc">Contact : <%=eventUser.contactNo%></div>
+          <br>
+          <div class="desc">E-Mail : <%=eventUser.email%></div>
+        </div>
+        <div class="card-footer">
+        
+          <h4>Price : <%=eventUser.venuPricing%></h4>
+          <button class="card-btn" >
+           
+            <a href="/payment">Pay</a>
+            
+          </button>
+          </div>
+        </div>
+      </div>
+   
+    
+
+</div>
+<%  }) %> 
+
+
+<%- include("footer") -%>

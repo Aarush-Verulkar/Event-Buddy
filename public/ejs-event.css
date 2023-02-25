@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/login-em-bg.png);
+    background: size 65px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .card-flex{
+     width: 400px;
+     height: 600px;
+     display: flex;
+ }
+
+  .profile-card{
+    margin-right: 25px ;
+    margin-top: 25px;
+    margin-left: 25px ;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-header{
+    background: #c8a2c8;
+    padding: 20px;
+  }
+  
+  .pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #D47AE8);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+  }
+  
+  @keyframes animated-gradient{
+    25%{
+      background-position: left bottom;
+    }
+    50%{
+      background-position: right bottom;
+    }
+    75%{
+      background-position: right top;
+    }
+    100%{
+      background-position: left top;
+    }
+  }
+  
+  .pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .name{
+    color: #f2f2f2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .desc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .sm a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+  }
+  
+  .sm a:hover{
+    color: #e66767;
+  }
+  
+  .contact-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #e66767;
+    border: 2px solid #e66767;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+  }
+  
+  .contact-btn:hover{
+    background: #e66767;
+    color: #f2f2f2;
+  }
+  
+  .card-footer{
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .card-footer h4{
+    font-size: 20px;
+  }
+  
+  .numbers{
+    display: flex;
+    align-items: center;
+  }
+  
+  .item{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #e66767;
+  }
+  
+  .item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+  }
+  
+  .border{
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+  }
+  
+  .card-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #8f00ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    margin-top: 5px;
+  }
+
+  
+  nav{
+
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    padding:0px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  nav ul li a{
+    
+    color:black;
+    font-size: 22px;
+  }
+      
+  nav h5{
+
+      display: inline-block;
+      list-style: none;
+      font-size: 22px;
+      font-weight: 300;
+  }
+  nav ul li{
+      display: inline-block;
+      list-style: none;
+      
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    
+
+  }
+
+  ul{
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
